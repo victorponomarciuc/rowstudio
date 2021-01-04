@@ -1,6 +1,6 @@
-body{
-margin: 0;
-padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 .top-menu {
   position: relative;
@@ -16,13 +16,17 @@ padding: 0;
   display: table;
   clear: both;
 }
-.left-item {float: left;}
-.right-item {float: right;}
+.left-item {
+  float: left;
+}
+.right-item {
+  float: right;
+}
 .navbar-logo {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .menu-main a {
   text-decoration: none;
@@ -33,62 +37,72 @@ padding: 0;
   letter-spacing: 2px;
   font-weight: bold;
   color: black;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
-.menu-main a:hover {background: rgba(0,0,0,.3);}
+.menu-main a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
 @media (max-width: 950px) {
-.menu-main {
-  padding-top: 50px;
-  text-align: center;
-}
-.navbar-logo {
-  position: absolute;
-  left: 50%;
-  top: 10px;
-  transform: translateX(-50%);
-}
-.menu-main li {
-  float: none;
-  display: inline-block;
-}
-.menu-main a {
-  line-height: normal;
-  padding: 20px 15px;
-  font-size: 16px;
-}
+  .menu-main {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  .menu-main li {
+    float: none;
+    display: inline-block;
+  }
+  .menu-main a {
+    line-height: normal;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+  .header-subtitle {
+    font-size: 4vw;
+  }
 }
 @media (max-width: 630px) {
-.menu-main li {display: block;}
-.menu-main {
-  padding-top: 30px;
-  text-align: center;
+  .menu-main li {
+    display: block;
+  }
+  .menu-main {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .header-subtitle {
+    font-size: 4vw;
+  }
 }
-}
-.logo-navbar{
+.logo-navbar {
   width: 50%;
 }
-.header{
+.header {
   background-image: url(../img/man-coffee-cup-pen.jpg);
   height: 100vh;
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.header-overlay{
-  background-color: rgba(0,0,0,.3);
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
   height: 100vh;
 }
-.header-info{
+.header-info {
   margin: auto;
   width: 80%;
   text-align: center;
   margin-top: 10%;
 }
-.header-title{
+.header-title {
   font-size: 7vw;
   color: white;
 }
-.header-subtitle{
+.header-subtitle {
   font-size: 2vw;
   color: white;
 }
