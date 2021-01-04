@@ -46,9 +46,9 @@ body {
   letter-spacing: 2px;
   font-weight: bold;
   color: black;
-  -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .menu-main a:hover {
@@ -111,6 +111,9 @@ body {
     padding: 20px 15px;
     font-size: 16px;
   }
+  .header-subtitle {
+    font-size: 4vw;
+  }
 }
 
 @media (max-width: 630px) {
@@ -120,5 +123,8 @@ body {
   .menu-main {
     padding-top: 30px;
     text-align: center;
+  }
+  .header-subtitle {
+    font-size: 4vw;
   }
 }
