@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .top-menu {
   position: relative;
   background: rgba(245, 245, 245, 0.637);
@@ -89,9 +93,108 @@ body {
   color: white;
 }
 
+.courses {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding-top: 2%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.courses-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courses-front,
+.courses-figma,
+.courses-smm {
+  width: 350px;
+  height: 80vh;
+  margin: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.courses-front:hover,
+.courses-figma:hover,
+.courses-smm:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.courses-img-smm {
+  margin: 20px auto;
+  background-image: url(../img/smm.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.courses-card-title {
+  font-size: 30px;
+}
+
+.courses-subscribe {
+  width: 80%;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  background-color: #fd8f00;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.courses-subscribe:hover {
+  background-color: #ffbb00;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .courses-front,
+  .courses-figma,
+  .courses-smm {
+    width: 200px;
+    margin: auto;
+    height: auto;
+  }
+  .courses-img-smm {
+    width: 170px;
+    height: 170px;
+  }
+}
+
 @media (max-width: 950px) {
+  .courses-list {
+    display: block;
+    width: 100%;
+  }
+  .courses-front,
+  .courses-figma,
+  .courses-smm {
+    margin: 20px auto;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #cecece;
+  }
   .menu-main {
-    padding-top: 50px;
+    padding-top: 70px;
     text-align: center;
   }
   .navbar-logo {
@@ -108,7 +211,7 @@ body {
   }
   .menu-main a {
     line-height: normal;
-    padding: 20px 15px;
+    padding: 10px 15px;
     font-size: 16px;
   }
   .header-subtitle {
@@ -117,11 +220,23 @@ body {
 }
 
 @media (max-width: 630px) {
+  .courses-list {
+    display: block;
+    width: 100%;
+  }
+  .courses-front,
+  .courses-figma,
+  .courses-smm {
+    margin: 20px auto;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #cecece;
+  }
   .menu-main li {
     display: block;
   }
   .menu-main {
-    padding-top: 30px;
+    padding-top: 40px;
     text-align: center;
   }
   .header-subtitle {
